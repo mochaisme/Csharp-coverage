@@ -1,0 +1,6 @@
+dotnet new sln -n CSharpCodeCoverage
+dotnet new console -o CSharpCodeCoverage
+dotnet new xunit -o CSharpCodeCoverage.Tests
+dotnet sln add CSharpCodeCoverage/CSharpCodeCoverage.csproj
+dotnet sln add CSharpCodeCoverage.Tests/CSharpCodeCoverage.Tests.csproj
+dotnet add CSharpCodeCoverage.Tests reference CSharpCodeCoverage/CSharpCodeCoverage.csproj
